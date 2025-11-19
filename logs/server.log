@@ -1,0 +1,93 @@
+
+> playful-paradox-learning@1.0.0 dev
+> vite
+
+error when starting dev server:
+Error: Port 3000 is already in use
+    at Server.onError (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:45596:18)
+    at Server.emit (node:events:508:28)
+    at emitErrorNT (node:net:6:59:06 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/main.jsx:6:51: ERROR: Unexpected "!"
+6:59:08 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/main.jsx:6:51: ERROR: Unexpected "!"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/main.jsx:6:51
+  
+  Unexpected "!"
+  4  |  import './index.css'
+  5  |  
+  6  |  ReactDOM.createRoot(document.getElementById('root')!).render(
+     |                                                     ^
+  7  |    <React.StrictMode>
+  8  |      <App />
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+7:00:04 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/main.jsx:6:51: ERROR: Unexpected "!"
+7:00:06 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/main.jsx:6:51: ERROR: Unexpected "!"
+7:00:06 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/main.jsx:6:51: ERROR: Unexpected "!"
+7:00:06 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/main.jsx:6:51: ERROR: Unexpected "!"
+7:00:07 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/main.jsx:6:51: ERROR: Unexpected "!"
+7:00:08 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/main.jsx:6:51: ERROR: Unexpected "!"
+7:00:09 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/main.jsx:6:51: ERROR: Unexpected "!"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/main.jsx:6:51
+  
+  Unexpected "!"
+  4  |  import './index.css'
+  5  |  
+  6  |  ReactDOM.createRoot(document.getElementById('root')!).render(
+     |                                                     ^
+  7  |    <React.StrictMode>
+  8  |      <App />
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+7:00:45 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/main.jsx:6:51: ERROR: Unexpected "!"
+7:00:45 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/main.jsx:6:51: ERROR: Unexpected "!"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/main.jsx:6:51
+  
+  Unexpected "!"
+  4  |  import './index.css'
+  5  |  
+  6  |  ReactDOM.createRoot(document.getElementById('root')!).render(
+     |                                                     ^
+  7  |    <React.StrictMode>
+  8  |      <App />
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
