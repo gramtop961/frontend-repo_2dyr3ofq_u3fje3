@@ -1,10 +1,12 @@
-import { FC } from 'react';
+import { FC, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Landing from '@/pages/Landing';
-import Activities from '@/pages/Activities';
-import ActivityPage from '@/pages/ActivityPage';
-import AuthPage from '@/pages/AuthPage';
-import AdminStub from '@/pages/AdminStub';
+
+// Lazy-load pages so modules (e.g., Firebase-dependent) only execute when visited
+const Landing = lazy(() => import('@/pages/Landing'));
+const Activities = lazy(() => import('@/pages/Activities'));
+const ActivityPage = lazy(() => import('@/pages/ActivityPage'));
+const AuthPage = lazy(() => import('@/pages/AuthPage'));
+const AdminStub = lazy(() => import('@/pages/AdminStub'));
 
 const App: FC = () => {
   return (
@@ -20,13 +22,15 @@ const App: FC = () => {
             </div>
           </div>
         </nav>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/activities" element={<Activities />} />
-          <Route path="/activity/:id" element={<ActivityPage />} />
-          <Route path="/auth" element={<AuthPage />} />
-          <Route path="/admin" element={<AdminStub />} />
-        </Routes>
+        <Suspense fallback={<div className="p-8 text-slate-600">Loading…</div>}>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/activities" element={<Activities />} />
+            <Route path="/activity/:id" element={<ActivityPage />} />
+            <Route path="/auth" element={<AuthPage />} />
+            <Route path="/admin" element={<AdminStub />} />
+          </Routes>
+        </Suspense>
         <footer className="mt-16 border-t bg-white">
           <div className="mx-auto max-w-6xl px-4 py-6 text-sm text-slate-600">
             © {new Date().getFullYear()} Playful Paradox
